@@ -1,0 +1,15 @@
+// ===================================================================
+// General styles
+// ===================================================================
+
+html {
+    @apply scroll-smooth;
+}
+
+.container-fluid {
+    @apply mx-9 w-full;
+}
+
+.container {
+    @apply px-9 mx-auto w-full max-w-content;
+}
