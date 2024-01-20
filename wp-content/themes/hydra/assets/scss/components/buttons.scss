@@ -1,0 +1,35 @@
+// Styles for buttons across the page
+.btn {
+    @apply text-center sm:min-w-[9.625rem] py-4 px-6 sm:px-10 capitalize text-xs leading-none font-bold rounded-[2.5rem] cursor-pointer border-2 transition-colors;
+
+    &:active {
+        animation: button-pop .2s ease-out;
+    }
+
+    &.btn-primary {
+        @apply bg-gradient-to-r from-accent to-secondary border-transparent transition-[filter] text-[#343045] bg-center hover:brightness-125;
+        background-size: 110% 100%;
+    }
+
+    &.btn-secondary {
+        @apply bg-primary border-white hover:bg-white hover:text-primary;
+    }
+}
+
+@keyframes button-pop {
+    0% {
+        scale: 1;
+    }
+
+    33% {
+        scale: 0.98;
+    }
+
+    66% {
+        scale: 1.02;
+    }
+
+    100% {
+        scale: 1;
+    }
+}

@@ -4,7 +4,7 @@
 
 <section class="hero-block" id="<?php the_field('block_id') ?>">
     <?php if ( get_field('hero_heading') ) : ?>
-        <h1><?php echo get_field('hero_heading'); ?></h1>
+        <h1><?= get_field('hero_heading'); ?></h1>
     <?php endif; ?>
     
 </section>

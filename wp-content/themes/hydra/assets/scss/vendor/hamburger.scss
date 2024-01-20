@@ -1,0 +1,60 @@
+/*!
+ * Hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+ .hamburger {
+    @apply bg-transparent cursor-pointer h-[22px] sm:h-[23px];
+
+    .hamburger-box {
+        @apply relative inline-block h-[21px] w-[30px];
+    }
+
+    .hamburger-inner {
+        @apply absolute bg-secondary h-[3px] w-[30px] rounded block -mt-[1.5px] top-1/2 transition-transform;
+        transition-duration: 0.22s;
+        transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+        &::before,
+        &::after {
+            @apply absolute block content-[""] bg-secondary h-[3px] w-[30px] rounded;
+        }
+
+        &::before {
+            @apply -top-[9px];
+            transition:
+                top 0.1s ease-in 0.25s,
+                opacity 0.1s ease-in;
+        }
+
+        &::after {
+            @apply -bottom-[9px];
+            transition:
+                bottom 0.1s ease-in 0.25s,
+                transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        }
+    }
+
+    &.active {
+        .hamburger-inner {
+            transform: rotate(225deg);
+            transition-delay: 0.12s;
+            transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+            &::before {
+                opacity: 0;
+                top: 0;
+                transition:
+                    top 0.1s ease-out,
+                    opacity 0.1s ease-out 0.12s;
+            }
+
+            &::after {
+                bottom: 0;
+                transform: rotate(-90deg);
+                transition:
+                    bottom 0.1s ease-out,
+                    transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+            }
+        }
+    }
+}

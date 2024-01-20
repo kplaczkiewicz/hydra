@@ -10,3 +10,19 @@
     font-weight: 400;
     src: url('/wp-content/themes/hydra/assets/fonts/Montserrat-Regular.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src: url('/wp-content/themes/hydra/assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: url('/wp-content/themes/hydra/assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}

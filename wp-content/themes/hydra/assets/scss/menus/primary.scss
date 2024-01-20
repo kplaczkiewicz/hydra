@@ -1,5 +1,17 @@
 // Primary menu styles
 
 .menu-primary {
-    @apply flex gap-5;
+    @apply flex gap-8 xl:gap-[2.625rem];
+
+    li {
+        &.current-menu-item {
+            a {
+                @apply underline;
+            }
+        }
+
+        a {
+            @apply uppercase leading-none text-xs font-bold underline-offset-[3px] hover:underline;
+        }
+    }
 }

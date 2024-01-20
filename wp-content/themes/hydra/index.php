@@ -8,7 +8,7 @@
 
 <?php get_header() ?>
 
-<main id="primary">
+<main id="primary" class="h-[300px]">
     <?php the_content() ?>
 </main>
 
