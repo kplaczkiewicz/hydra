@@ -20,7 +20,7 @@
     
                         <div class="flex gap-[0.875rem] items-start max-xl:w-full max-xl:justify-center">
                             <?php if (get_sub_field('step_heading')) : ?>
-                                <img class="max-w-[33px] mt-px" src="<?= get_stylesheet_directory_uri() . '/assets/img/arrow-small-right.svg' ?>" alt="Arrow right">
+                                <img class="max-w-[33px] mt-px" src="<?= get_stylesheet_directory_uri() . '/assets/img/arrow-small-right.svg' ?>" alt="Arrow right" width="33" height="27">
                                 <p class="text-xl sm:text-2xl font-bold !leading-[1.4]"><?= get_sub_field('step_heading'); ?></p>
                             <?php endif; ?>
                         </div>

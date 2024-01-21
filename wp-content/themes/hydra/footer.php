@@ -12,7 +12,7 @@
     <div class="flex flex-col sm:flex-row max-sm:items-center max-sm:text-center max-xl:justify-between mb-10 md:mb-[4.25rem]">
         <!-- Logo -->
         <?php if (get_field('site_logo_simple', 'options')) : $image = get_field('site_logo_simple', 'options'); ?>
-            <a href="/">
+            <a href="/" title="Hydra logo">
                 <img class="max-sm:w-[131px] max-lg:w-[151px]" src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>" width="<?= $image['width'] ?>" height="<?= $image['height'] ?>" />
             </a>
         <?php endif; ?>
@@ -68,7 +68,7 @@
             <?php if (have_rows('footer_social_media', 'options')) : ?>
                 <div class="flex justify-center sm:justify-start gap-5 mt-6 md:mt-[2.375rem]">
                     <?php while (have_rows('footer_social_media', 'options')) : the_row(); ?>
-                        <a class="transition-[filter] hover:brightness-125" href="<?= get_sub_field('footer_social_media_url', 'options'); ?>">
+                        <a class="transition-[filter] hover:brightness-125" href="<?= get_sub_field('footer_social_media_url', 'options'); ?>" title="Social media icon">
                             <?php if (get_sub_field('footer_social_media_icon', 'options')) : $image = get_sub_field('footer_social_media_icon', 'options'); ?>
                                 <img src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>" width="<?= $image['width'] ?>" height="<?= $image['height'] ?>" />
                             <?php endif; ?>

@@ -25,7 +25,7 @@
                         <?php endif; ?>
                     </span>
 
-                    <img class="max-w-[200px] max-xl:mt-4 max-md:hidden" src="<?= get_stylesheet_directory_uri() . '/assets/img/arrow-right-long.svg' ?>" alt="Arrow right">
+                    <img class="max-w-[200px] max-xl:mt-4 max-md:hidden" src="<?= get_stylesheet_directory_uri() . '/assets/img/arrow-right-long.svg' ?>" alt="Arrow right" width="200" height="36">
                 </div>
             </h2>
         </div>

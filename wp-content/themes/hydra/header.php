@@ -25,7 +25,7 @@
         <div class="container flex items-center py-2.5 max-xl:justify-between">
             <!-- Logo -->
             <?php if (get_field('site_logo', 'options')) : $image = get_field('site_logo', 'options'); ?>
-                <a class="xl:mr-[12.5rem] -mb-2 sm:-mb-3 lg:-mb-4" href="/">
+                <a class="xl:mr-[12.5rem] -mb-2 sm:-mb-3 lg:-mb-4" href="/" title="Hydra logo">
                     <img class="max-sm:w-[131px] max-lg:w-[151px]" src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>" width="<?= $image['width'] ?>" height="<?= $image['height'] ?>" />
                 </a>
             <?php endif; ?>
