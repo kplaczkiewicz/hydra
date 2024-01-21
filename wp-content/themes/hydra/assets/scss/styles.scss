@@ -10,9 +10,6 @@ Text Domain: Hydra
 @tailwind components;
 @tailwind utilities;
 
-// Utilities
-@import './utilities/mixins';
-
 // Menus
 @import './menus/primary';
 @import './menus/mobile';
@@ -24,7 +21,6 @@ Text Domain: Hydra
 // Partials
 @import './partials/fonts';
 @import './partials/scaffolding';
-@import './partials/typography';
 
 // Vendor
 @import './vendor/hamburger';

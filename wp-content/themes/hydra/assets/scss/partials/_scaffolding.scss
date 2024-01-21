@@ -64,12 +64,20 @@ body {
 
 .bg-shape-right {
     @screen xl {
-        margin-right: calc((100% - 1440px) / 2);
+        margin-right: calc((100% - 1416px) / 2);        
     }
 }
 
 .bg-shape-left {
     @screen xl {
-        margin-left: calc((100% - 1440px) / 2);
+        margin-left: calc((100% - 1416px) / 2);
     }
+}
+
+.bg-gradient-radial {
+    background: radial-gradient(circle, #433D60 0%, #211E2E 66%);
+}
+
+.shadow-outline {
+    box-shadow: 0 0 0 20px #0D0D0D52;
 }

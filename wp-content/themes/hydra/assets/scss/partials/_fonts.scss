@@ -7,6 +7,14 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-display: swap;
+    font-weight: 300;
+    src: url('/wp-content/themes/hydra/assets/fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-display: swap;
     font-weight: 400;
     src: url('/wp-content/themes/hydra/assets/fonts/Montserrat-Regular.ttf') format('truetype');
 }

@@ -12,7 +12,7 @@
     <section class="container flex flex-col md:flex-row justify-between gap-10 md:gap-8" id="<?= $block_id  ?>" style="padding-top: var(--padding-top); padding-bottom: var(--padding-bottom);">
         <div class="md:max-w-[456px] lg:mt-12">
             <?php if (have_rows('hero_heading')) : ?>
-                <h1 class="site-heading text-[32px] md:text-[40px] leading-snug font-bold mb-4 md:mb-9">
+                <h1 class="site-heading text-3xl md:text-[40px] leading-snug font-bold mb-4 md:mb-9">
                     <?php while (have_rows('hero_heading')) : the_row(); ?>
                         <span class="<?php the_sub_field('hero_heading_text_color'); ?>">
                             <?php the_sub_field('hero_heading_text'); ?>
@@ -22,7 +22,7 @@
             <?php endif; ?>
 
             <?php if (get_field('hero_text')) : ?>
-                <p class="mb-8 md:mb-[4.125rem] leading-normal"><?php echo get_field('hero_text'); ?></p>
+                <p class="mb-8 md:mb-[4.125rem] leading-normal"><?= get_field('hero_text'); ?></p>
             <?php endif; ?>
 
             <?php if (get_field('hero_button')) : $link = get_field('hero_button'); ?>

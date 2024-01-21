@@ -13,7 +13,7 @@
         <!-- Logo -->
         <?php if (get_field('site_logo_simple', 'options')) : $image = get_field('site_logo_simple', 'options'); ?>
             <a href="/">
-                <img class="max-sm:w-[121px] max-lg:w-[141px]" src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>" width="<?= $image['width'] ?>" height="<?= $image['height'] ?>" />
+                <img class="max-sm:w-[111px] max-lg:w-[131px]" src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>" width="<?= $image['width'] ?>" height="<?= $image['height'] ?>" />
             </a>
         <?php endif; ?>
 
