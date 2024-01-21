@@ -14,7 +14,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-[342px_327px_321px_1fr] xl:pl-7 gap-y-12 gap-6 xl:gap-0">
                 <?php while (have_rows('steps')) : the_row(); ?>
                     <div class="flex xl:block flex-col items-center">
-                        <div class="shadow-outline grid place-items-center w-[125px] sm:w-[159px] aspect-square bg-gradient-to-tr from-accent to-secondary rounded-full mb-[2.813rem] ml-5 <?= get_row_index() == 1 ? 'xl:ml-12' : '' ?>">
+                        <div class="shadow-outline grid place-items-center w-[125px] sm:w-[159px] aspect-square bg-gradient-to-tr from-accent to-secondary rounded-full mb-[2.813rem] sm:ml-5 <?= get_row_index() == 1 ? 'xl:ml-12' : '' ?>">
                             <span class="text text-5xl sm:text-[4rem] leading-none text-primary-focus font-bold ">0<?= get_row_index() ?></span>
                         </div>
     

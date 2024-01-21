@@ -63,7 +63,7 @@
 
         <!-- Mobile menu -->
         <div class="mobile-menu bg-primary transition-all duration-300 z-50 grid grid-rows-[0fr] lg:hidden">
-            <div class="w-full overflow-hidden shadow-xl px-4">
+            <div class="w-full overflow-hidden shadow-xl px-6">
                 <div class="mx-auto max-w-[420px] w-full pb-5">
                     <?php
                     wp_nav_menu([
