@@ -1,6 +1,6 @@
 // Styles for buttons across the page
 .btn {
-    @apply text-center sm:min-w-[9.625rem] py-4 px-6 sm:px-10 capitalize text-xs leading-none font-bold rounded-[2.5rem] cursor-pointer border-2 transition-colors;
+    @apply inline-block text-center sm:min-w-[9.625rem] py-4 px-6 sm:px-10 capitalize text-xs leading-none font-bold rounded-[2.5rem] cursor-pointer border-2 transition-colors;
 
     &:active {
         animation: button-pop .2s ease-out;
