@@ -6,10 +6,70 @@ html {
     @apply scroll-smooth bg-primary text-white  font-primary;
 }
 
+body {
+    @apply overflow-x-hidden;
+}
+
 .container-fluid {
     @apply mx-6 w-full;
 }
 
 .container {
     @apply px-6 mx-auto w-full max-w-content;
+}
+
+.menu {
+    li {
+        &.current-menu-item {
+            a {
+                @apply underline;
+            }
+        }
+
+        a {
+            @apply uppercase underline-offset-[3px] hover:underline;
+        }
+    }
+}
+
+.site-heading {
+    .gradient-left {
+        @apply bg-gradient-to-l from-secondary to-accent text-transparent bg-clip-text;
+    }
+
+    .gradient-right {
+        @apply bg-gradient-to-r from-secondary to-accent text-transparent bg-clip-text;
+    }
+}
+
+.gradient-horizontal {
+    background: linear-gradient(
+        90deg,
+        rgba(52, 48, 69, 1) 0%,
+        rgba(192, 183, 232, 1) 33%,
+        rgba(129, 118, 175, 1) 66%,
+        rgba(52, 48, 69, 1) 100%
+    );
+}
+
+.gradient-vertical {
+    background: linear-gradient(
+        180deg,
+        rgba(52, 48, 69, 1) 0%,
+        rgba(192, 183, 232, 1) 33%,
+        rgba(129, 118, 175, 1) 66%,
+        rgba(52, 48, 69, 1) 100%
+    );
+}
+
+.bg-shape-right {
+    @screen xl {
+        margin-right: calc((100% - 1440px) / 2);
+    }
+}
+
+.bg-shape-left {
+    @screen xl {
+        margin-left: calc((100% - 1440px) / 2);
+    }
 }

@@ -21,7 +21,7 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
 
-    <header class="site-header lg:mt-5 xl:mt-[2.875rem] sticky top-0 bg-primary z-50">
+    <header class="site-header lg:mt-5 xl:mt-[2.875rem] sticky top-0 bg-transparent z-50">
         <div class="container flex items-center py-2.5 max-xl:justify-between">
             <!-- Logo -->
             <?php if (get_field('site_logo', 'options')) : $image = get_field('site_logo', 'options'); ?>
@@ -35,7 +35,7 @@
                 <?php
                 wp_nav_menu([
                     'theme_location' => 'menu-primary',
-                    'menu_class' => 'menu-primary',
+                    'menu_class' => 'menu-primary menu',
                     'container' => 'nav'
                 ]);
                 ?>
@@ -63,12 +63,12 @@
 
         <!-- Mobile menu -->
         <div class="mobile-menu bg-primary transition-all duration-300 z-50 grid grid-rows-[0fr] lg:hidden">
-            <div class="w-full overflow-hidden shadow-xl px-6">
+            <div class="w-full overflow-hidden shadow-xl px-4">
                 <div class="mx-auto max-w-[420px] w-full pb-5">
                     <?php
                     wp_nav_menu([
                         'theme_location' => 'menu-primary',
-                        'menu_class' => 'menu-mobile',
+                        'menu_class' => 'menu-mobile menu',
                         'container' => 'nav'
                     ]);
                     ?>

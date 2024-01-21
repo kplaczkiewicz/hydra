@@ -1,0 +1,11 @@
+// Footer menu styles
+
+.menu-footer {
+    @apply flex flex-col gap-6;
+
+    li {
+        a {
+            @apply text-sm sm:text-base leading-none font-bold;
+        }
+    }
+}

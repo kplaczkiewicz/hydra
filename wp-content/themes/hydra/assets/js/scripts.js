@@ -35,4 +35,5 @@ document.addEventListener("DOMContentLoaded", function () {
 function headerScrollClass() {
     const isScroll = window.scrollY > 50;
     siteHeader.classList.toggle('shadow-xl', isScroll);
+    siteHeader.classList.toggle('!bg-primary', isScroll);
 }

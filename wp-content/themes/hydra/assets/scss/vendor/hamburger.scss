@@ -3,7 +3,7 @@
  * @link https://github.com/jonsuh/hamburgers
  */
  .hamburger {
-    @apply bg-transparent cursor-pointer h-[22px] sm:h-[23px];
+    @apply bg-transparent cursor-pointer h-[23px] sm:h-[24px];
 
     .hamburger-box {
         @apply relative inline-block h-[21px] w-[30px];

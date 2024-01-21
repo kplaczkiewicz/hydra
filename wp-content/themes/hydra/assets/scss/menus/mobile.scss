@@ -2,16 +2,4 @@
 
 .menu-mobile {
     @apply flex justify-between mt-4 md:mt-0 uppercase text-xs font-semibold;
-
-    li {
-        &.current-menu-item {
-            a {
-                @apply underline;
-            }
-        }
-
-        a {
-            @apply underline-offset-[3px] hover:underline;
-        }
-    }
 }
