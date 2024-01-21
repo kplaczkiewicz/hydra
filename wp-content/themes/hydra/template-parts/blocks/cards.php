@@ -14,15 +14,18 @@
             <?php while (have_rows('cards')) : the_row(); ?>
                 <div class="bg-gradient-radial rounded-[2.5rem] text-center pt-[1.438rem] px-[1.563rem] pb-[2.5rem]">
                     <?php if (get_sub_field('card_image')) : $image = get_sub_field('card_image'); ?>
-                        <img class="mx-auto mb-[1.313rem]" src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>" width="<?= $image['width'] ?>" height="<?= $image['height'] ?>" />
+                        <img class="mx-auto mb-6" src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>" width="<?= $image['width'] ?>" height="<?= $image['height'] ?>" />
                     <?php endif; ?>
 
                     <?php if (get_sub_field('card_heading')) : ?>
-                        <h3 class="inline-block text-2xl leading-none border-b border-b-[#C0B7E854] pb-[1.125rem] mb-[1.375rem] font-bold uppercase"><?= get_sub_field('card_heading'); ?></h3>
+                        <h3 class="inline-block text-2xl leading-none mb-[1.125rem]  font-bold uppercase"><?= get_sub_field('card_heading'); ?></h3>
                     <?php endif; ?>
 
+                    <!-- Divider -->
+                    <div class="w-[154px] h-px mx-auto mb-5 bg-[#C0B7E854]"></div>
+
                     <?php if (get_sub_field('card_heading')) : ?>
-                        <p class="text-left text-xs leading-normal mb-[2.188rem]"><?= get_sub_field('card_text'); ?></p>
+                        <p class="text-left text-xs leading-[1.7] mb-8"><?= get_sub_field('card_text'); ?></p>
                     <?php endif; ?>
 
                     <?php if (get_sub_field('card_button')) : $link = get_sub_field('card_button'); ?>

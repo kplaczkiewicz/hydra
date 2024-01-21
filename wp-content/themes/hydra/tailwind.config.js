@@ -6,7 +6,7 @@ module.exports = {
 			'primary': ['Montserrat'],
 		},
 		maxWidth: {
-			'content': '1296px',
+			'content': '1320px',
 		},
 		extend: {
 			colors: {

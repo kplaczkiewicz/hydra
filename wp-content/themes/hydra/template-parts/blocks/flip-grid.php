@@ -9,7 +9,7 @@
     echo $block_styles;
     ?>
 
-    <section class="container flex flex-col md:flex-row max-xl:items-center gap-8 md:gap-10 lg:gap-16 xl:gap-[6.125rem]" id="<?= $block_id  ?>" style="padding-top: var(--padding-top); padding-bottom: var(--padding-bottom);">
+    <section class="container flex flex-col md:flex-row max-xl:items-center gap-8 md:gap-10 lg:gap-16 xl:gap-[7.375rem]" id="<?= $block_id  ?>" style="padding-top: var(--padding-top); padding-bottom: var(--padding-bottom);">
         <div class="max-xl:flex-1 xl:max-w-[524px]">
             <?php if (get_field('flip_grid_image')) : $image = get_field('flip_grid_image'); ?>
                 <img src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>" width="<?= $image['width'] ?>" height="<?= $image['height'] ?>" />
@@ -32,11 +32,11 @@
             </h2>
 
             <?php if (get_field('flip_grid_text')) : ?>
-                <p class="mb-7"><?= get_field('flip_grid_text'); ?></p>
+                <p class="mb-6 leading-[1.62]"><?= get_field('flip_grid_text'); ?></p>
             <?php endif; ?>
 
             <?php if (get_field('flip_grid_button')) : $link = get_field('flip_grid_button'); ?>
-                <a class="btn btn-primary" href="<?= $link['url'] ?>" target="<?= $link['target'] ?>"><?= $link['title'] ?></a>
+                <a class="btn btn-primary btn-wide" href="<?= $link['url'] ?>" target="<?= $link['target'] ?>"><?= $link['title'] ?></a>
             <?php endif; ?>
         </div>
     </section>

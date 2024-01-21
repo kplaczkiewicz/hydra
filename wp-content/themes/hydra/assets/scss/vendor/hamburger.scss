@@ -3,7 +3,7 @@
  * @link https://github.com/jonsuh/hamburgers
  */
  .hamburger {
-    @apply bg-transparent cursor-pointer h-[23px] sm:h-[24px];
+    @apply bg-transparent cursor-pointer h-[20px];
 
     .hamburger-box {
         @apply relative inline-block h-[21px] w-[30px];
@@ -13,6 +13,7 @@
         @apply absolute bg-secondary h-[3px] w-[30px] rounded block -mt-[1.5px] top-1/2 transition-transform;
         transition-duration: 0.22s;
         transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        
 
         &::before,
         &::after {

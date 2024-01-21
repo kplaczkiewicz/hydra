@@ -10,9 +10,9 @@
 	?>
 
     <section class="container flex flex-col md:flex-row justify-between gap-10 md:gap-8" id="<?= $block_id  ?>" style="padding-top: var(--padding-top); padding-bottom: var(--padding-bottom);">
-        <div class="md:max-w-[456px] lg:mt-12">
+        <div class="md:max-w-[457px] lg:mt-10">
             <?php if (have_rows('hero_heading')) : ?>
-                <h1 class="site-heading text-3xl md:text-[40px] leading-snug font-bold mb-4 md:mb-9">
+                <h1 class="site-heading text-3xl leading-[1.3] font-bold mb-4 md:mb-8">
                     <?php while (have_rows('hero_heading')) : the_row(); ?>
                         <span class="<?php the_sub_field('hero_heading_text_color'); ?>">
                             <?php the_sub_field('hero_heading_text'); ?>
@@ -22,11 +22,11 @@
             <?php endif; ?>
 
             <?php if (get_field('hero_text')) : ?>
-                <p class="mb-8 md:mb-[4.125rem] leading-normal"><?= get_field('hero_text'); ?></p>
+                <p class="mb-8 md:mb-[3.938rem] leading-[1.6]"><?= get_field('hero_text'); ?></p>
             <?php endif; ?>
 
             <?php if (get_field('hero_button')) : $link = get_field('hero_button'); ?>
-                <a class="btn btn-primary" href="<?= $link['url'] ?>" target="<?= $link['target'] ?>"><?= $link['title'] ?></a>
+                <a class="btn btn-primary btn-wide" href="<?= $link['url'] ?>" target="<?= $link['target'] ?>"><?= $link['title'] ?></a>
             <?php endif; ?>
         </div>
 

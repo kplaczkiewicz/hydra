@@ -10,7 +10,7 @@
 	?>
 
     <section class="container flex flex-col md:flex-row max-xl:gap-5" id="<?= $block_id  ?>" style="padding-top: var(--padding-top); padding-bottom: var(--padding-bottom);">
-        <div class="flex-1 mt-0.5">
+        <div class="flex-1 mt-2">
             <h2 class="text-3xl sm:text-4xl leading-none uppercase">
                 <span class="block font-bold">
                     <?php if ( get_field('section_heading') ) : ?>
@@ -18,8 +18,8 @@
                     <?php endif; ?>
                 </span>
 
-                <div class="inline-flex flex-col xl:flex-row xl:items-center font-light mt-2">
-                    <span class="shrink-0 xl:mr-4">
+                <div class="inline-flex flex-col xl:flex-row xl:items-center font-light mt-2.5">
+                    <span class="shrink-0 xl:mr-5">
                         <?php if ( get_field('section_subheading') ) : ?>
                             <?= get_field('section_subheading'); ?>
                         <?php endif; ?>
@@ -32,7 +32,7 @@
 
         <div class="max-xl:flex-1 xl:max-w-[652px]">
             <?php if ( get_field('section_text') ) : ?>
-                <p><?= get_field('section_text'); ?></p>
+                <p class="leading-[1.6]"><?= get_field('section_text'); ?></p>
             <?php endif; ?>
         </div>
     </section>

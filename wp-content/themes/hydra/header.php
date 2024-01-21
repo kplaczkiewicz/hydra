@@ -21,11 +21,11 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
 
-    <header class="site-header lg:mt-4 xl:mt-[2.25rem] sticky top-0 bg-transparent z-50">
+    <header class="site-header lg:mt-4 xl:mt-10 sticky top-0 bg-transparent z-50">
         <div class="container flex items-center py-2.5 max-xl:justify-between">
             <!-- Logo -->
             <?php if (get_field('site_logo', 'options')) : $image = get_field('site_logo', 'options'); ?>
-                <a class="xl:mr-[12.813rem]" href="/">
+                <a class="xl:mr-[12.5rem] -mb-2 sm:-mb-3 lg:-mb-4" href="/">
                     <img class="max-sm:w-[131px] max-lg:w-[151px]" src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>" width="<?= $image['width'] ?>" height="<?= $image['height'] ?>" />
                 </a>
             <?php endif; ?>

@@ -15,7 +15,7 @@
         </div>
 
         <!-- Background shape bottom -->
-        <img class="bg-shape-right bg-shape-left absolute bottom-[6.25rem] right-0 z-0 max-lg:hidden" src="<?= get_stylesheet_directory_uri() . '/assets/img/bg-shapes-bottom.svg' ?>">
+        <img class="bg-shape-right bg-shape-left absolute bottom-[7.188rem] right-0 z-0 max-lg:hidden" src="<?= get_stylesheet_directory_uri() . '/assets/img/bg-shapes-bottom.svg' ?>">
     </div>
 
     <!-- Background shapes -->
